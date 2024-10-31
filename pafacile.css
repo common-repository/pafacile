@@ -1,0 +1,312 @@
+/* Form ricerca delibere / determine */
+.tablenav{
+	clear: both;
+	padding: 1em;
+	margin: 1em;
+	border: 1px solid #ccc;
+	text-align: right;
+	line-height: 2em;
+}
+.tablenav input,
+.tablenav select{
+	width: 40%;
+	border: 1px solid #ccc;
+}
+.tablenav input.button{
+	width: auto;
+	clear: left;
+	display: block;
+	margin-top: 1em;
+	margin-right: 0;
+	margin-left: auto;
+}
+
+/* PAFacile: Organigramma */
+
+/* Elenco */
+.organigramma, 
+.organigramma li{
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+	list-style-type: none;
+}
+	
+	.organigramma li div{
+		padding-top: 0.2em;
+		padding-bottom: 0.2em;
+		line-height: 2.5em;
+		font-weight: bold;
+		
+	}
+	
+		.organigramma li.level-1 div a{}
+		.organigramma li.level-2 div a{}
+		.organigramma li.level-3 div a{}
+		.organigramma li.level-4 div a{}
+
+.organigramma-ufficio{
+	border-bottom: 1px solid #253;
+	margin-bottom: 1em;
+}
+	.organigramma-dettaglio{
+		border: 1px solid #ddd;
+		background-color: #eee;
+		clear: both;
+		padding: 0.5em;
+	}
+dl.organigramma-recapiti{}
+
+	dl.organigramma-recapiti dt{
+		padding: 0.5em;
+		margin: 0;
+		float: left;
+		clear: both;
+		display: block;
+		font-weight: bold;
+		width:27%;
+		
+	}
+	
+	dl.organigramma-recapiti dd{
+		padding: 0.5em;
+		margin: 0;
+		display: block;
+		float: left;
+		width:65%;
+	}
+	
+/* PAFacile: Ordinanza */
+
+/* Elenco */
+ul.ordinanze li{
+	padding-left: 0.5em;
+	margin-left: 1em;
+	list-style: square;
+	list-style-position: outside;
+}
+
+/* Box di ricerca */
+
+form.bandi,
+form.delibere,
+form.determine,
+form.ordinanze,
+form.albopretorio{
+	padding: 0.5em;
+	border: 1px solid #ccc;
+}
+
+/* WP Hacks */
+form.delibere br, form.bandi br, form.ordinanze br, form.organi br, form.determine br, form.albopretorio br, form.incarichi br{ display: none; }
+form.delibere p, form.bandi p, form.ordinanze p, form.organi p, form.determine p, form.albopretorio p, form.incarichi p{ display: inline; }
+
+/* Albo pretorio */
+
+		form.albopretorio .data label,
+		form.albopretorio .data p{
+			display: inline;
+			font-size: 1em;
+		}
+
+	form.albopretorio #ap-datirepgen div.data,
+	form.albopretorio #ap-datiatto div.data,
+	form.albopretorio #ap-datiprotocollo div.data,
+	form.albopretorio #ap-datifascicolo div.data{
+		line-height: 2.4em;
+		height: 2.4em;
+	}
+	
+/* Bandi di gara */
+form.bandi .bando-type{
+	width: 49%;
+	float: left;
+}
+
+form.bandi .bando-office-id{
+	width: 49%;
+	float: right;
+}
+	form.bandi .bando-type label,
+	form.bandi .bando-office-id label{
+		display: block;
+		font-weight: bold;
+		width: 90%;
+	}
+
+	form.bandi .bando-type select,
+	form.bandi .bando-office-id select{
+		display: block;
+		width: 90%;
+	}
+	
+	form.bandi fieldset,
+	form.determine fieldset,
+	form.ordinanze fieldset,
+	form.albopretorio fieldset,
+	form.incarichi fieldset{
+		width: 49%;
+		float: left;
+		border: 0;
+		padding: 0;
+	}
+		form.bandi fieldset legend,
+		form.determine fieldset legend,
+		form.ordinanze fieldset legend,
+		form.albopretorio fieldset legend,
+		form.incarichi fieldset legend{
+			border-bottom: 1px solid #369;
+			color: #258;
+			font-size: 1em;
+			display: block;
+			width: 50%;
+			margin: 1em;
+		}
+
+		form.determine div.submit{
+			clear: both;
+			display: block;
+			text-align: right;
+		}
+/* Delibere */
+
+	form.delibere div{
+		float: left;
+		width: 45%;
+		padding: 0.5em;
+	}
+
+form.delibere div.delibere-oggetto{
+		display: block;
+		float: none;
+		width: 90%;
+	}
+	form.delibere .delibere-oggetto input{
+		width: 90%;
+	}
+	
+	form.delibere label{
+		display: block;
+		font-weight: bold;
+	}
+	
+	form.delibere .delibere-data{
+		float: none;
+	}
+		form.delibere .delibere-data label{
+			display: inline;
+		}
+
+/* Determine e Ordinanze*/
+
+form.determine div#numero-determina,
+form.ordinanze div#numero-ordinanza{
+	float: left;
+	width: 30%;
+}
+form.determine div#id-ufficio-determina,
+form.determine div#testo-determina,
+form.ordinanze div#id-ufficio-ordinanza{
+	float: left;
+	width: 65%;
+	/* padding-left: 5%; */
+}
+
+	form.determine div#numero-determina label,
+	form.determine div#id-ufficio-determina label,
+	form.determine div#testo-determina label,
+	form.ordinanze div#numero-ordinanza label,
+	form.ordinanze div#id-ufficio-ordinanza label{
+		font-weight: bold;
+		display: block;
+	}
+
+
+	form.determine div#id-ufficio-determina select,
+	form.determine div#testo-determina input,
+	form.ordinanze div#id-ufficio-ordinanza select{
+		width: 90%;
+	}
+	
+
+
+div.postentry div.organo-istituzionale dt{
+	padding: 0.5em;
+	margin: 0;
+	float: left;
+	clear: both;
+	display: block;
+	font-weight: bold;
+	width:27%;
+	
+}
+
+div.postentry div.organo-istituzionale dd{
+	padding: 0.5em;
+	margin: 0;
+	display: block;
+	float: left;
+	width:65%;
+}
+
+div.bando {
+	font-size: 1.2em;
+}
+
+div.bando dl dt{
+	clear: left;
+	display: inline;
+	font-weight: bold;
+	float: left;
+	line-height: 2.5em;
+	padding: 0;
+	width: 30%;
+}
+
+div.bando dl dd{
+	display: block;
+	margin-left: 30%;
+	/*float: left;*/
+	line-height: 2.5em;
+	padding: 0;
+	margin-left: 0.5em;
+}
+
+div.bando h4{
+	margin-top: 1em;
+}
+
+.cleft{
+	clear: left;
+}
+.ghosted{
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border: 0;
+}
+
+/* Paginazione */
+
+ul.paginazione{
+	display: block;
+	list-style: none;
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+	margin: 1em 0;
+}
+
+	ul.paginazione li{
+		border: 1px solid #ccf;
+		background-color: #eef;
+		display: inline;
+		padding: 0.5em;
+		font-weight: bold;
+		color: #004;
+		margin: 0.3em; 
+	}
+		ul.paginazione li a{
+			color: #147;
+		}

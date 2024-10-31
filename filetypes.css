@@ -1,0 +1,29 @@
+.attach{
+	background-repeat: no-repeat;
+	background-position: left;
+	min-height: 50px;
+	padding: 0.2em;
+	padding-left: 60px;
+	display: block;
+	list-style: none;
+	list-style-type: none;
+	background-image: url('images/ft/unknown.png');
+}
+.file-doc,
+.file-odt{
+	background-image: url('images/ft/doc.png');
+}
+
+.file-zip,
+.file-rar,
+.file-7z{
+	background-image: url('images/ft/zip.png');
+}
+.file-xls,
+.file-ods{
+	background-image: url('images/ft/xls.png');
+}
+
+.file-pdf{
+	background-image: url('images/ft/pdf.png');
+}

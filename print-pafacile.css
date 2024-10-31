@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+#wpbody {
+  clear: both;
+  margin-left: 0 !important;
+}
+#wphead-info,
+#screen-meta,
+.update-nag,
+#adminmenu,
+#post-filter,
+#footer,
+#back-buttons-box{
+	display: none;
+}

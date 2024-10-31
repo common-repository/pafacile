@@ -1,0 +1,45 @@
+ciao
+mario
+
+LA PROCEDURA � INDIPENDENTE DAL CMS funziona anche su pagine php di siti statici.
+
+1) REPARAZIONE: TROVARE l' IDProfilo del vostro sito (ovviamente gi� monitorato da google analitycs) 
+
+cartella [gettingStarted]
+contiene una api di google analitycs per interrogare i vostri siti e dalla quale prelevare il necessario $idprofilo
+mettere sulla root del proprio sito i due files contenuti nella cartella [gettingStarted]
+autenticarsi su google analitycs e poi aprire il file gettingStarted.html E PRELEVARE L'IDProfilo del sito.
+se riuscite a trovarlo su google analitycs potete evitare 'sto giro - io non l'ho trovato)
+
+ATTENZIONE perch� funzioni dovete risultare logati su un'altra pagina, la api necessita di essere gi� autenticati (visualizzare la home del proprio google analitycs) prima di poterla usare.
+
+2) PERSONALIZZARE E INSTALLARE i file 
+
+QUESTI SONO I SOLI 2 FILE DA USARE per avere le statistiche in tempo reale per un certo periodo di osservazione che potete variare.
+
+cartella [analytics_api]
+contiene gli unici 2 files necessari alla procedura che consente di visualizzare le statistiche su una pagina qualsiasi del nostro sito
+
+Personalizzazioni:
+
+nel file gacounter.php inserite i dati ricghiesti
+
+$login = '';
+$password = '';
+$idprofilo = '';
+$site = ''; // indirizzo del sito senza http://
+
+$idprofilo lo dovete cercare in google analitycs nel vostro sito, io non ci riuscivo, 
+ma poi ho usato un'altra api per contrllare queli erano i miei (vi allego anche i files dell'altra api)
+
+dopo aver personalizzato gacounter.php trasferite tutto in una nuova cartella sulla root che chiamerete /analytics_api
+
+create o aprite la pagina nel vostro sito sulla quale volete visualizzare i dati di 30 giorni di rilevazione 
+
+incollate questo codice senza modificarlo e settate a php il tipo di contenuto della pagina.
+
+(se volete potete modificare i giorni, basta cambiare il valore della variabile $giorni presente nel solito e unico file da editare gacounter.php 
+
+l'esempio sul sito della mia scuola lo vedete qui:
+www.iccastellucchio.gov.it/le_visite_sul_sito_dellic_di_castellucchio
+
